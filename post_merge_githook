@@ -10,3 +10,8 @@ curl -X DELETE "https://api.cloudflare.com/client/v4/zones/4868d9cb3ed6feaada3c1
     -H "X-Auth-Key: 0c8ab91da75f8c7622ec3b9f4208a44978434" \
     -H "Content-Type: application/json" \
     --data '{"purge_everything":true}'
+
+#lets everybody in slack know
+curl -X POST "https://hooks.slack.com/services/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" \
+    -H "Content-type: application/json" \
+    --data '{"text":"Landing Page 23people.\nNuevos cambios en master\ndesplegados a produccion correctamente", "username": "23people Deployer Bot"}' 
