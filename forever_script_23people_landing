@@ -1,0 +1,2 @@
+#Comando Forever
+sudo NODE_ENV=production PORT=80 forever server.js -w -l log.txt -o out.txt -e error.txt &
