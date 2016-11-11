@@ -1,9 +1,11 @@
+#change directory
 cd ~/app-root/repo/23people-landing-page/
 
+#install
 npm install
 
 #purge clouflare cache
-curl -X DELETE "https://api.cloudflare.com/client/v4/zones/741355793b3593de107e0b44ad8a79b2/purge_cache" \
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/4868d9cb3ed6feaada3c103c769d1a89/purge_cache" \
     -H "X-Auth-Email: cloudflare@23people.io" \
     -H "X-Auth-Key: 0c8ab91da75f8c7622ec3b9f4208a44978434" \
     -H "Content-Type: application/json" \
