@@ -1,2 +1,2 @@
 #Comando Forever
-sudo NODE_ENV=production PORT=80 forever server.js -w -l log.txt -o out.txt -e error.txt &
+sudo NODE_ENV=production PORT=80 forever start --spinSleepTime 10000 ~/app-root/repo/23people-landing-page/server.js -w -a -l log.txt -o out.txt -e error.txt
